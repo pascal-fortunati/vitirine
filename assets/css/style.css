@@ -1,0 +1,321 @@
+:root {
+    --primary-color: #6c5ce7;
+    --secondary-color: #a29bfe;
+    --accent-color: #fd79a8;
+    --dark-color: #2d3436;
+    --light-color: #ddd6fe;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    color: var(--dark-color);
+}
+
+/* Header */
+.navbar-brand {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 1.8rem;
+    background: linear-gradient(45deg, var(--primary-color), var(--accent-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.navbar {
+    background: rgba(255, 255, 255, 0.95) !important;
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(108, 92, 231, 0.1);
+}
+
+.nav-link {
+    font-weight: 500;
+    color: var(--dark-color) !important;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: var(--primary-color) !important;
+}
+
+/* Hero */
+.hero {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    padding: 100px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><defs><radialGradient id="b" gradientUnits="userSpaceOnUse" cx="500" cy="500" r="500"><stop offset="0" stop-color="white" stop-opacity="0.1"/><stop offset="1" stop-color="white" stop-opacity="0"/></radialGradient></defs><circle cx="500" cy="500" r="500" fill="url(%23b)"/></svg>') center/cover;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.hero h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+}
+
+.btn-hero {
+    background: white;
+    color: var(--primary-color);
+    border: none;
+    padding: 15px 30px;
+    font-weight: 600;
+    border-radius: 50px;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 25px rgba(255,255,255,0.2);
+}
+
+.btn-hero:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 35px rgba(255,255,255,0.3);
+    color: var(--primary-color);
+}
+
+/* Apps */
+.apps-section {
+    padding: 80px 0;
+    background: linear-gradient(to bottom, #f8f9fa, white);
+}
+
+.section-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 3rem;
+    color: var(--dark-color);
+}
+
+.app-card {
+    background: white;
+    border-radius: 20px;
+    padding: 2rem;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    height: 100%;
+    border: none;
+}
+
+.app-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+.app-icon {
+    width: 80px;
+    height: 80px;
+    border-radius: 20px;
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    color: white;
+}
+
+.boursobank-icon { background: linear-gradient(45deg, #e74c3c, #c0392b); }
+.ubereats-icon { background: linear-gradient(45deg, #00d2ff, #3a7bd5); }
+.discord-icon { background: linear-gradient(45deg, #7289da, #5865f2); }
+
+.app-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.app-description {
+    color: #6c757d;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.app-features {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 2rem;
+}
+
+.app-features li {
+    padding: 0.5rem 0;
+    color: #495057;
+}
+
+.app-features li i {
+    color: var(--primary-color);
+    margin-right: 0.5rem;
+}
+
+.btn-app {
+    width: 100%;
+    padding: 12px;
+    font-weight: 600;
+    border-radius: 12px;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.btn-boursobank {
+    background: linear-gradient(45deg, #e74c3c, #c0392b);
+    color: white;
+}
+
+.btn-ubereats {
+    background: linear-gradient(45deg, #00d2ff, #3a7bd5);
+    color: white;
+}
+
+.btn-discord {
+    background: linear-gradient(45deg, #7289da, #5865f2);
+    color: white;
+}
+
+.btn-app:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* Footer */
+.footer {
+    background: var(--dark-color);
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.social-links a {
+    color: white;
+    font-size: 1.5rem;
+    margin: 0 15px;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: var(--accent-color);
+}
+
+/* Page Navigation */
+.page-nav {
+    background: rgba(108, 92, 231, 0.1);
+    padding: 20px 0;
+    display: none;
+}
+
+.page-nav.show {
+    display: block;
+}
+
+.page-nav .nav-link {
+    background: white;
+    margin: 0 10px;
+    padding: 10px 20px;
+    border-radius: 25px;
+    color: var(--primary-color) !important;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.page-nav .nav-link:hover {
+    background: var(--primary-color);
+    color: white !important;
+}
+
+/* App Pages */
+
+.app-header {
+    padding: 60px 0;
+    color: white;
+    text-align: center;
+}
+
+.boursobank-header {
+    background: linear-gradient(135deg, #e74c3c, #c0392b);
+}
+
+.ubereats-header {
+    background: linear-gradient(135deg, #00d2ff, #3a7bd5);
+}
+
+.discord-header {
+    background: linear-gradient(135deg, #7289da, #5865f2);
+}
+
+.app-logo {
+    width: 120px;
+    height: 120px;
+    border-radius: 30px;
+    margin: 0 auto 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+    background: rgba(255,255,255,0.2);
+    backdrop-filter: blur(10px);
+}
+
+.app-details {
+    padding: 60px 0;
+}
+
+.screenshot-gallery {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    padding: 20px 0;
+}
+
+.screenshot {
+    flex: 0 0 200px;
+    height: 400px;
+    background: #f8f9fa;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #6c757d;
+    font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    .app-card {
+        margin-bottom: 2rem;
+    }
+}

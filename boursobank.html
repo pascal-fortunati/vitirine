@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,9 +10,11 @@
     <!-- Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
     <!-- Style CSS -->
-     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
@@ -21,24 +24,24 @@
             <a class="navbar-brand" href="index.html">
                 <img src="assets/img/logo.png" width="150" height="80">
             </a>
-            
+
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            
+
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
                         <a class="nav-link" href="index.html">Accueil</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="boursobank.html">BoursoBank</a>
+                        <a class="nav-link nav-link-bourso active" href="boursobank.html">BoursoBank</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="ubereats.html">UberEats</a>
+                        <a class="nav-link nav-link-uber" href="ubereats.html">UberEats</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="discord.html">Dicord</a>
+                        <a class="nav-link nav-link-discord" href="discord.html">Discord</a>
                     </li>
                 </ul>
             </div>
@@ -46,15 +49,15 @@
     </nav>
 
     <!-- Home Page -->
-    <div id="homePage" class="home-page">
+    <div class="home-page">
         <!-- Apps Section -->
-        <section id="apps" class="apps-section">
+        <section class="apps-section">
             <!-- BoursoBank Page -->
-            <div id="boursobankPage" class="app-page">
+            <div class="app-page">
                 <div class="app-header boursobank-header">
                     <div class="container text-center">
                         <div class="app-logo">
-                            <i class="fas fa-university"></i>
+                            <img src="assets/img/bourso.webp" height="100" alt="">
                         </div>
                         <h1>BoursoBank</h1>
                         <p class="lead">La banque mobile nouvelle génération</p>
@@ -66,31 +69,36 @@
                         <div class="row">
                             <div class="col-lg-8">
                                 <h2>Révolutionnez votre façon de gérer vos finances</h2>
-                                <p class="lead">BoursoBank vous offre une expérience bancaire 100% mobile avec des services gratuits et innovants. Gérez votre argent intelligemment, où que vous soyez.</p>
-                                
+                                <p class="lead">BoursoBank vous offre une expérience bancaire 100% mobile avec des
+                                    services gratuits et innovants. Gérez votre argent intelligemment, où que vous
+                                    soyez.</p>
+
                                 <div class="row mt-5">
                                     <div class="col-md-6">
-                                        <h4><i class="fas fa-credit-card text-danger me-2"></i>Compte gratuit</h4>
-                                        <p>Aucun frais de tenue de compte, carte bancaire gratuite et virements sans limite.</p>
+                                        <h4><i class="fas fa-credit-card text-info me-2"></i>Compte gratuit</h4>
+                                        <p>Aucun frais de tenue de compte, carte bancaire gratuite et virements sans
+                                            limite.</p>
                                     </div>
                                     <div class="col-md-6">
-                                        <h4><i class="fas fa-chart-line text-danger me-2"></i>Épargne intelligente</h4>
-                                        <p>Outils d'épargne automatique et investissement simplifié pour faire fructifier vos économies.</p>
+                                        <h4><i class="fas fa-chart-line text-info me-2"></i>Épargne intelligente</h4>
+                                        <p>Outils d'épargne automatique et investissement simplifié pour faire
+                                            fructifier vos économies.</p>
                                     </div>
                                 </div>
 
                                 <div class="row mt-4">
                                     <div class="col-md-6">
-                                        <h4><i class="fas fa-shield-alt text-danger me-2"></i>Sécurité maximale</h4>
-                                        <p>Authentification biométrique, notifications en temps réel et blocage instantané de carte.</p>
+                                        <h4><i class="fas fa-shield-alt text-info me-2"></i>Sécurité maximale</h4>
+                                        <p>Authentification biométrique, notifications en temps réel et blocage
+                                            instantané de carte.</p>
                                     </div>
                                     <div class="col-md-6">
-                                        <h4><i class="fas fa-headset text-danger me-2"></i>Support 24/7</h4>
+                                        <h4><i class="fas fa-headset text-info me-2"></i>Support 24/7</h4>
                                         <p>Une équipe dédiée disponible à tout moment pour répondre à vos questions.</p>
                                     </div>
                                 </div>
                             </div>
-                            
+
                             <div class="col-lg-4">
                                 <div class="card">
                                     <div class="card-body text-center">
@@ -104,41 +112,120 @@
                                             </a>
                                         </div>
                                         <div class="social-links mt-4">
-                                            <a href="#" class="text-danger me-3"><i class="fab fa-facebook fa-2x"></i></a>
-                                            <a href="#" class="text-danger me-3"><i class="fab fa-twitter fa-2x"></i></a>
-                                            <a href="#" class="text-danger"><i class="fab fa-instagram fa-2x"></i></a>
+                                            <a href="#" class="text-info me-3"><i class="fab fa-facebook fa-2x"></i></a>
+                                            <a href="#" class="text-info me-3"><i class="fab fa-twitter fa-2x"></i></a>
+                                            <a href="#" class="text-info"><i class="fab fa-instagram fa-2x"></i></a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="row mt-5">
-                            <div class="col-12">
-                                <h3 class="text-center mb-4">Aperçu de l'application</h3>
-                                <div class="screenshot-gallery">
-                                    <div class="screenshot">
-                                        <div class="text-center">
-                                            <i class="fas fa-home fa-3x mb-3 text-danger"></i>
-                                            <p>Tableau de bord</p>
+                        <div class="container mt-5">
+                            <div class="row">
+                                <div class="col-12">
+                                    <h3 class="text-center mb-4">Aperçu de l'application</h3>
+                                    <div class="screenshot-gallery">
+
+                                        <div class="screenshot" data-bs-toggle="modal" data-bs-target="#screenshotModal"
+                                            data-slide="0">
+                                            <div class="screenshot-image gallbourso1"></div>
                                         </div>
-                                    </div>
-                                    <div class="screenshot">
-                                        <div class="text-center">
-                                            <i class="fas fa-exchange-alt fa-3x mb-3 text-danger"></i>
-                                            <p>Virements</p>
+
+                                        <div class="screenshot" data-bs-toggle="modal" data-bs-target="#screenshotModal"
+                                            data-slide="1">
+                                            <div class="screenshot-image gallbourso2"></div>
                                         </div>
-                                    </div>
-                                    <div class="screenshot">
-                                        <div class="text-center">
-                                            <i class="fas fa-chart-pie fa-3x mb-3 text-danger"></i>
-                                            <p>Analyse</p>
+
+                                        <div class="screenshot" data-bs-toggle="modal" data-bs-target="#screenshotModal"
+                                            data-slide="2">
+                                            <div class="screenshot-image gallbourso3"></div>
                                         </div>
+
+                                        <div class="screenshot" data-bs-toggle="modal" data-bs-target="#screenshotModal"
+                                            data-slide="3">
+                                            <div class="screenshot-image gallbourso4"></div>
+                                        </div>
+
+                                        <div class="screenshot" data-bs-toggle="modal" data-bs-target="#screenshotModal"
+                                            data-slide="4">
+                                            <div class="screenshot-image gallbourso5"></div>
+                                        </div>
+
                                     </div>
-                                    <div class="screenshot">
-                                        <div class="text-center">
-                                            <i class="fas fa-piggy-bank fa-3x mb-3 text-danger"></i>
-                                            <p>Épargne</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Modal avec carrousel -->
+                        <div class="modal fade" id="screenshotModal" tabindex="-1"
+                            aria-labelledby="screenshotModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-body text-center p-4">
+
+                                        <!-- Carrousel dans le modal -->
+                                        <div id="modalCarousel" class="carousel slide modal-carousel"
+                                            data-bs-ride="false">
+
+                                            <!-- Indicateurs -->
+                                            <div class="carousel-indicators">
+                                                <button type="button" data-bs-target="#modalCarousel"
+                                                    data-bs-slide-to="0" class="active"></button>
+                                                <button type="button" data-bs-target="#modalCarousel"
+                                                    data-bs-slide-to="1"></button>
+                                                <button type="button" data-bs-target="#modalCarousel"
+                                                    data-bs-slide-to="2"></button>
+                                                <button type="button" data-bs-target="#modalCarousel"
+                                                    data-bs-slide-to="3"></button>
+                                                <button type="button" data-bs-target="#modalCarousel"
+                                                    data-bs-slide-to="4"></button>
+                                            </div>
+
+                                            <!-- Slides -->
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <div class="modal-screenshot">
+                                                        <div class="screenshot-image gallbourso1"></div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="carousel-item">
+                                                    <div class="modal-screenshot">
+                                                        <div class="screenshot-image gallbourso2"></div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="carousel-item">
+                                                    <div class="modal-screenshot">
+                                                        <div class="screenshot-image gallbourso3"></div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="carousel-item">
+                                                    <div class="modal-screenshot">
+                                                        <div class="screenshot-image gallbourso4"></div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="carousel-item">
+                                                    <div class="modal-screenshot">
+                                                        <div class="screenshot-image gallbourso5"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- Contrôles -->
+                                            <button class="carousel-control-prev" type="button"
+                                                data-bs-target="#modalCarousel" data-bs-slide="prev">
+                                                <span class="carousel-control-prev-icon"></span>
+                                                <span class="visually-hidden">Précédent</span>
+                                            </button>
+                                            <button class="carousel-control-next" type="button"
+                                                data-bs-target="#modalCarousel" data-bs-slide="next">
+                                                <span class="carousel-control-next-icon"></span>
+                                                <span class="visually-hidden">Suivant</span>
+                                            </button>
                                         </div>
                                     </div>
                                 </div>
@@ -155,7 +242,7 @@
                 <div class="row">
                     <div class="col-md-6">
                         <a class="navbar-brand" href="index.html">
-                        <img src="assets/img/logo.png" width="150" height="80">
+                            <img src="assets/img/logo.png" class="logo-white " width="150" height="80">
                         </a>
                         <p>L’univers des applis modernes</p>
                     </div>
@@ -174,5 +261,28 @@
     </div>
     <!-- Bootstrap Js  -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Ouverture modal avec le bon slide
+        const screenshotModal = document.getElementById('screenshotModal');
+        const modalCarousel = document.getElementById('modalCarousel');
+
+        screenshotModal.addEventListener('show.bs.modal', function (event) {
+            const trigger = event.relatedTarget;
+            const slideIndex = parseInt(trigger.getAttribute('data-slide'));
+            const carousel = bootstrap.Carousel.getOrCreateInstance(modalCarousel);
+            carousel.to(slideIndex);
+        });
+
+        // Navigation par clavier
+        screenshotModal.addEventListener('keydown', function (e) {
+            const carousel = bootstrap.Carousel.getOrCreateInstance(modalCarousel);
+            if (e.key === 'ArrowLeft') {
+                carousel.prev();
+            } else if (e.key === 'ArrowRight') {
+                carousel.next();
+            }
+        });
+    </script>
 </body>
+
 </html>

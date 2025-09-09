@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,9 +10,11 @@
     <!-- Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
     <!-- Style CSS -->
-     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
@@ -21,25 +24,25 @@
             <a class="navbar-brand" href="index.html">
                 <img src="assets/img/logo.png" width="150" height="80">
             </a>
-            
-            
+
+
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            
+
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
                         <a class="nav-link" href="index.html">Accueil</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="boursobank.html">BoursoBank</a>
+                        <a class="nav-link nav-link-bourso" href="boursobank.html">BoursoBank</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="ubereats.html">UberEats</a>
+                        <a class="nav-link nav-link-uber active" href="ubereats.html">UberEats</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="discord.html">Dicord</a>
+                        <a class="nav-link nav-link-discord" href="discord.html">Discord</a>
                     </li>
                 </ul>
             </div>
@@ -47,105 +50,196 @@
     </nav>
 
     <!-- Home Page -->
-    <div id="homePage" class="home-page">
-        <!-- UberEats Page -->
-        <div id="ubereatsPage" class="app-page">
-            <div class="app-header ubereats-header">
-                <div class="container text-center">
-                    <div class="app-logo">
-                        <i class="fas fa-utensils"></i>
-                    </div>
-                    <h1>UberEats</h1>
-                    <p class="lead">Vos restaurants préférés livrés chez vous</p>
-                </div>
-            </div>
-
-            <div class="app-details">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8">
-                            <h2>La faim n'attend pas</h2>
-                            <p class="lead">Découvrez des milliers de restaurants près de chez vous et faites-vous livrer vos plats préférés en quelques minutes seulement. UberEats connecte votre appétit aux meilleurs restaurants de votre ville.</p>
-                            
-                            <div class="row mt-5">
-                                <div class="col-md-6">
-                                    <h4><i class="fas fa-rocket text-primary me-2"></i>Livraison express</h4>
-                                    <p>Commandez et recevez vos plats en moins de 30 minutes grâce à notre réseau de livreurs.</p>
-                                </div>
-                                <div class="col-md-6">
-                                    <h4><i class="fas fa-map-marker-alt text-primary me-2"></i>Suivi en temps réel</h4>
-                                    <p>Suivez votre commande depuis la préparation jusqu'à la livraison sur une carte interactive.</p>
-                                </div>
-                            </div>
-
-                            <div class="row mt-4">
-                                <div class="col-md-6">
-                                    <h4><i class="fas fa-star text-primary me-2"></i>Restaurants de qualité</h4>
-                                    <p>Des fast-foods aux restaurants étoilés, trouvez exactement ce dont vous avez envie.</p>
-                                </div>
-                                <div class="col-md-6">
-                                    <h4><i class="fas fa-tags text-primary me-2"></i>Offres exclusives</h4>
-                                    <p>Profitez de réductions spéciales et d'offres limitées réservées aux utilisateurs de l'app.</p>
-                                </div>
-                            </div>
+    <div class="home-page">
+        <!-- Apps Section -->
+        <section class="apps-section">
+            <!-- UberEats Page -->
+            <div class="app-page">
+                <div class="app-header ubereats-header">
+                    <div class="container text-center">
+                        <div class="app-logo">
+                            <img src="assets/img/ubereats.webp" height="120" alt="">
                         </div>
-                        
-                        <div class="col-lg-4">
-                            <div class="card">
-                                <div class="card-body text-center">
-                                    <h5>Téléchargez maintenant</h5>
-                                    <div class="d-grid gap-2 mt-3">
-                                        <a href="#" class="btn btn-dark">
-                                            <i class="fab fa-apple me-2"></i>App Store
-                                        </a>
-                                        <a href="#" class="btn btn-success">
-                                            <i class="fab fa-google-play me-2"></i>Google Play
-                                        </a>
-                                    </div>
-                                    <div class="social-links mt-4">
-                                        <a href="#" class="text-primary me-3"><i class="fab fa-facebook fa-2x"></i></a>
-                                        <a href="#" class="text-primary me-3"><i class="fab fa-twitter fa-2x"></i></a>
-                                        <a href="#" class="text-primary"><i class="fab fa-instagram fa-2x"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row mt-5">
-                        <div class="col-12">
-                            <h3 class="text-center mb-4">Aperçu de l'application</h3>
-                            <div class="screenshot-gallery">
-                                <div class="screenshot">
-                                    <div class="text-center">
-                                        <i class="fas fa-search fa-3x mb-3 text-primary"></i>
-                                        <p>Recherche</p>
-                                    </div>
-                                </div>
-                                <div class="screenshot">
-                                    <div class="text-center">
-                                        <i class="fas fa-list fa-3x mb-3 text-primary"></i>
-                                        <p>Menus</p>
-                                    </div>
-                                </div>
-                                <div class="screenshot">
-                                    <div class="text-center">
-                                        <i class="fas fa-shopping-cart fa-3x mb-3 text-primary"></i>
-                                        <p>Panier</p>
-                                    </div>
-                                </div>
-                                <div class="screenshot">
-                                    <div class="text-center">
-                                        <i class="fas fa-shipping-fast fa-3x mb-3 text-primary"></i>
-                                        <p>Livraison</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        <h1>UberEats</h1>
+                        <p class="lead">Vos restaurants préférés livrés chez vous</p>
                     </div>
                 </div>
+
+                <div class="app-details">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-8">
+                                <h2>La faim n'attend pas</h2>
+                                <p class="lead">Découvrez des milliers de restaurants près de chez vous et faites-vous
+                                    livrer vos plats préférés en quelques minutes seulement. UberEats connecte votre
+                                    appétit aux meilleurs restaurants de votre ville.</p>
+
+                                <div class="row mt-5">
+                                    <div class="col-md-6">
+                                        <h4><i class="fas fa-rocket text-success me-2"></i>Livraison express</h4>
+                                        <p>Commandez et recevez vos plats en moins de 30 minutes grâce à notre réseau de
+                                            livreurs.</p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <h4><i class="fas fa-map-marker-alt text-success me-2"></i>Suivi en temps réel
+                                        </h4>
+                                        <p>Suivez votre commande depuis la préparation jusqu'à la livraison sur une
+                                            carte interactive.</p>
+                                    </div>
+                                </div>
+
+                                <div class="row mt-4">
+                                    <div class="col-md-6">
+                                        <h4><i class="fas fa-star text-success me-2"></i>Restaurants de qualité</h4>
+                                        <p>Des fast-foods aux restaurants étoilés, trouvez exactement ce dont vous avez
+                                            envie.</p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <h4><i class="fas fa-tags text-success me-2"></i>Offres exclusives</h4>
+                                        <p>Profitez de réductions spéciales et d'offres limitées réservées aux
+                                            utilisateurs de l'app.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4">
+                                <div class="card">
+                                    <div class="card-body text-center">
+                                        <h5>Téléchargez maintenant</h5>
+                                        <div class="d-grid gap-2 mt-3">
+                                            <a href="#" class="btn btn-dark">
+                                                <i class="fab fa-apple me-2"></i>App Store
+                                            </a>
+                                            <a href="#" class="btn btn-success">
+                                                <i class="fab fa-google-play me-2"></i>Google Play
+                                            </a>
+                                        </div>
+                                        <div class="social-links mt-4">
+                                            <a href="#" class="text-success me-3"><i
+                                                    class="fab fa-facebook fa-2x"></i></a>
+                                            <a href="#" class="text-success me-3"><i
+                                                    class="fab fa-twitter fa-2x"></i></a>
+                                            <a href="#" class="text-success"><i class="fab fa-instagram fa-2x"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="container mt-5">
+                            <div class="row">
+                                <div class="col-12">
+                                    <h3 class="text-center mb-4">Aperçu de l'application</h3>
+                                    <div class="screenshot-gallery">
+
+                                        <div class="screenshot" data-bs-toggle="modal" data-bs-target="#screenshotModal"
+                                            data-slide="0">
+                                            <div class="screenshot-image galluber1"></div>
+                                        </div>
+
+                                        <div class="screenshot" data-bs-toggle="modal" data-bs-target="#screenshotModal"
+                                            data-slide="1">
+                                            <div class="screenshot-image galluber2"></div>
+                                        </div>
+
+                                        <div class="screenshot" data-bs-toggle="modal" data-bs-target="#screenshotModal"
+                                            data-slide="2">
+                                            <div class="screenshot-image galluber3"></div>
+                                        </div>
+
+                                        <div class="screenshot" data-bs-toggle="modal" data-bs-target="#screenshotModal"
+                                            data-slide="3">
+                                            <div class="screenshot-image galluber4"></div>
+                                        </div>
+
+                                        <div class="screenshot" data-bs-toggle="modal" data-bs-target="#screenshotModal"
+                                            data-slide="4">
+                                            <div class="screenshot-image galluber5"></div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Modal avec carrousel -->
+                        <div class="modal fade" id="screenshotModal" tabindex="-1"
+                            aria-labelledby="screenshotModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-body text-center p-4">
+
+                                        <!-- Carrousel dans le modal -->
+                                        <div id="modalCarousel" class="carousel slide modal-carousel"
+                                            data-bs-ride="false">
+
+                                            <!-- Indicateurs -->
+                                            <div class="carousel-indicators">
+                                                <button type="button" data-bs-target="#modalCarousel"
+                                                    data-bs-slide-to="0" class="active"></button>
+                                                <button type="button" data-bs-target="#modalCarousel"
+                                                    data-bs-slide-to="1"></button>
+                                                <button type="button" data-bs-target="#modalCarousel"
+                                                    data-bs-slide-to="2"></button>
+                                                <button type="button" data-bs-target="#modalCarousel"
+                                                    data-bs-slide-to="3"></button>
+                                                <button type="button" data-bs-target="#modalCarousel"
+                                                    data-bs-slide-to="4"></button>
+                                            </div>
+
+                                            <!-- Slides -->
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <div class="modal-screenshot">
+                                                        <div class="screenshot-image galluber1"></div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="carousel-item">
+                                                    <div class="modal-screenshot">
+                                                        <div class="screenshot-image galluber2"></div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="carousel-item">
+                                                    <div class="modal-screenshot">
+                                                        <div class="screenshot-image galluber3"></div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="carousel-item">
+                                                    <div class="modal-screenshot">
+                                                        <div class="screenshot-image galluber4"></div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="carousel-item">
+                                                    <div class="modal-screenshot">
+                                                        <div class="screenshot-image galluber5"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- Contrôles -->
+                                            <button class="carousel-control-prev" type="button"
+                                                data-bs-target="#modalCarousel" data-bs-slide="prev">
+                                                <span class="carousel-control-prev-icon"></span>
+                                                <span class="visually-hidden">Précédent</span>
+                                            </button>
+                                            <button class="carousel-control-next" type="button"
+                                                data-bs-target="#modalCarousel" data-bs-slide="next">
+                                                <span class="carousel-control-next-icon"></span>
+                                                <span class="visually-hidden">Suivant</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
+        </section>
 
         <!-- Footer -->
         <footer id="contact" class="footer">
@@ -153,7 +247,7 @@
                 <div class="row">
                     <div class="col-md-6">
                         <a class="navbar-brand" href="index.html">
-                            <img src="assets/img/logo.png" width="150" height="80">
+                            <img src="assets/img/logo.png" class="logo-white " width="150" height="80">
                         </a>
                         <p>L’univers des applis modernes</p>
                     </div>
@@ -172,5 +266,28 @@
     </div>
     <!-- Bootstrap Js  -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Ouverture modal avec le bon slide
+        const screenshotModal = document.getElementById('screenshotModal');
+        const modalCarousel = document.getElementById('modalCarousel');
+
+        screenshotModal.addEventListener('show.bs.modal', function (event) {
+            const trigger = event.relatedTarget;
+            const slideIndex = parseInt(trigger.getAttribute('data-slide'));
+            const carousel = bootstrap.Carousel.getOrCreateInstance(modalCarousel);
+            carousel.to(slideIndex);
+        });
+
+        // Navigation par clavier
+        screenshotModal.addEventListener('keydown', function (e) {
+            const carousel = bootstrap.Carousel.getOrCreateInstance(modalCarousel);
+            if (e.key === 'ArrowLeft') {
+                carousel.prev();
+            } else if (e.key === 'ArrowRight') {
+                carousel.next();
+            }
+        });
+    </script>
 </body>
+
 </html>
